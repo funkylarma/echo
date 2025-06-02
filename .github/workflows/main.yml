@@ -19,6 +19,7 @@ jobs:
         uses: actions/cache@v4
         with:
           path: data
+          key: ${{ runner.os }}-data-${{ hashFiles('**/package-lock.json') }}
       - name: Run echo
         run: node index.js dry
         env:
