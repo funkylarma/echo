@@ -23,7 +23,7 @@ jobs:
           restore-keys: |
             cache-data
       - name: Run echo
-        run: node index.js
+        run: node index.js dry
         env:
           MASTODON_ACCESS_TOKEN: ${{ secrets.MASTODON_ACCESS_TOKEN }}
           MASTODON_URL: ${{ secrets.MASTODON_URL }}
