@@ -1,7 +1,7 @@
 name: Syndicate using echo
 on:
   schedule:
-    - cron: '*/60 * * * *'
+    - cron: '*/5 * * * *'
 jobs:
   echo:
     runs-on: ubuntu-latest
