@@ -21,7 +21,7 @@ jobs:
           path: data
           key: ${{ runner.os }}-data-${{ hashFiles('**/package-lock.json') }}
       - name: Run echo
-        run: node index.js
+        run: node index.js dry
         env:
           MASTODON_ACCESS_TOKEN: ${{ secrets.MASTODON_ACCESS_TOKEN }}
           MASTODON_URL: ${{ secrets.MASTODON_URL }}
